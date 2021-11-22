@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #081B33 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.nav-item{
+    padding-left: 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF !important;
+}
+
+.contact{
+    background-color: #EE6111;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+}
+
+.headerBigText{
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 86px;
+    /* or 123% */
+
+
+    color: #FFFFFF;
+    
+
+}
+
+.headerBigText .name{
+    color: #081B33;
+    background-color: #FFFFFF;
+}
+
+.headerImage{
+    object-fit: cover;
+    width: 100%;
+}
+
+.headerIcon .scroll{
+    text-align: center;
+}
+
+.headerIcon .social{
+    font-size: 30px;
+}
+
+.headerIcon .social a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.headerContainer{
+    position: relative;
+}
+
+.headerIcon .social .github:hover{
+    color: #171515;
+    transition: ease-in-out 0.2s;
+}
+
+.headerIcon .social .instagram:hover{
+    color: #8a3ab9	;
+    transition: ease-in-out 0.2s;
+}
+
+.headerIcon .social .linkedin:hover{
+    color: #0077b5	;
+    transition: ease-in-out 0.2s;
+}
+
+
+/* skills section */
+
+.skill{
+    filter: grayscale(100%);
+    transition: ease 0.7s;
+
+}
+
+
+.skill:hover{
+    filter: grayscale(0%);
+    transition: ease 0.3s;
+}
+
+/*feedback*/
+
+.feedback{
+    color: #FFFFFF;
+}
+.personneName{
+    display: inline-block;
+    margin-left: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 26px;
+    /* identical to box height, or 153% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.comment{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 26px;
+    /* or 153% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+
+
+.feedbackTitle p,
+.projectTitle p{
+    font-size: 30px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    padding: 10px;
+
+}
+.feedbackTitle p{
+    padding-left: 70px;
+
+}
+
+.projectTitle p{
+    padding-right: 70px;
+
+}
+
+.feedbackTitle p span,
+.projectTitle p span{
+    color: #081B33;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.projectTitle{
+    text-align: end;
+}
+
+.feedback{
+    background-color: #081B33;
+    transition: ease 0.5s;
+    padding: 10px;
+}
+
+.feedback:hover{
+	box-shadow:
+     inset 10px 10px 10px rgb(13, 37, 66,0.2),
+		 -10px 10px 10px rgb(0,0,0,0.2),
+         10px 10px 10px rgb(13, 37, 66,0.2),
+		 -10px 10px 10px rgb(0,0,0,0.2);
+	border-radius: 10px;
+    transition: ease 0.5s;
+}
+
+
+/* project section */
+
+
+
+
+
+figcaption p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 26px;
+
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+figcaption a{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+
+    transition: ease-in-out 0.5s;
+
+}
+
+figcaption a:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+    border-left: 1px solid #FFFFFF; 
+    border-right: 1px solid #FFFFFF; 
+    transition: ease-in-out 0.2s;
+    background-color: transparent;
+}
+
+
+figcaption a:hover span{
+    color: #FFFFFF;
+}
+
+
+
+
+figcaption a span{
+
+    color: #081B33;
+    font-weight: 900;
+}
+
+
+/* Contact */
+
+.contactBigTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 114px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.contactSmallTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;       
+}
+
+.socialMedia a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 6px;
+    font-size: 25px;
+}
+
+.inputs input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+
+    color: rgba(8, 27, 51, 0.64);
+
+}
+
+.inputs a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 23px;
+    background-color: #CA9357;
+    transition: ease 0.2s;
+
+}
+
+.inputs a:hover{
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #CA9357;
+
+    transition: ease 0.2s;
+}
+
+.inputs a:hover span{
+    color: #CA9357;
+}
+
+.inputs a span{
+    padding: 10px;
+    margin: 10px 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 23px;
+    text-transform: capitalize;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.inputs textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+
+}
+
+.footer{
+    width: 100%;
+    padding: 5px;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.footer p{
+
+padding-top: 10px;
+}
+.footer p span{
+    color: rgb(8, 27, 51,0.8);
+    text-transform: capitalize;
+}
+
+/* Responsive */
+@media (min-width: 576px) { 
+    .headerImage{
+        width: 100vh;
+    }
+    .headerIcon .social{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    font-size: 30px;
+
+    bottom: -10px;
+    left: -70px;
+
+}
+}
