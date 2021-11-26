@@ -6,7 +6,7 @@ function choseEmoji(){
 }
 var emoji = choseEmoji();
 
-
+var snd = new Audio("/images/sound.wav");
 
 function createParticle(x,y,emoji){
     
@@ -53,7 +53,10 @@ function removeParticle (e) {
 
 if (document.body.animate) {
     document.getElementById('button').addEventListener('click',()=>{
+
         var emoji = choseEmoji();
+        snd.play();
+
         document.getElementById('emoji').innerHTML = emoji;
         const x = window.innerHeight;
         const y = window.innerWidth ;

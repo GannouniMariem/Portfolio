@@ -36,6 +36,7 @@ section:nth-of-type(even) {
     
 }
 
+
 .nav-item{
     padding: 0 10px;
     transition: ease 0.5s;
@@ -70,7 +71,7 @@ section:nth-of-type(even) {
     background-color: #EE6111;
     color: #FFFFFF;
     border-radius: 7px;
-    box-shadow: -6px 4px 0px #421a03;
+    box-shadow: -6px 2px 0px #421a03;
     display: inline-block;
     transition: all .2s;
     position: relative;
@@ -146,22 +147,39 @@ section:nth-of-type(even) {
 
 .headerIcon .div1{
     animation-name: down1;
+    transition: ease .4s;
 }
 
 .headerIcon .div2{
     animation-name: down2;
+    transition: ease .4s;
+
 }
 
 
 @keyframes down1 {
-    0% {top: 80%;}
-    100%  {top: 100%;}
+    0% {
+        top: 80%;
+        transition: ease .4s;
+    }
+    100%  {
+        top: 100%;
+        transition: ease .4s;
+
+    }
 }
 
 
 @keyframes down2 {
-    0% {top: 85%;}
-    100%  {top: 100%;}
+    0% {
+        top: 85%;
+        transition: ease .4s;
+    }
+    100%  {
+        top: 100%;
+        transition: ease .4s;
+
+    }
 }
 
 
