@@ -160,11 +160,12 @@ section:nth-of-type(even) {
 @keyframes down1 {
     0% {
         top: 80%;
-        transition: ease .4s;
+        transition: ease-in-out .4s;
     }
     100%  {
         top: 100%;
-        transition: ease .4s;
+        transition: ease-in-out .4s;
+
 
     }
 }
@@ -173,11 +174,13 @@ section:nth-of-type(even) {
 @keyframes down2 {
     0% {
         top: 85%;
-        transition: ease .4s;
+        transition: ease-in-out .4s;
+
     }
     100%  {
         top: 100%;
-        transition: ease .4s;
+        transition: ease-in-out .4s;
+
 
     }
 }
@@ -219,8 +222,8 @@ section:nth-of-type(even) {
 /* skills section */
 
 .skill{
-    filter: grayscale(95%);
     transition: ease 0.7s;
+    width: 50px;
 
 }
 
@@ -230,6 +233,68 @@ section:nth-of-type(even) {
     transition: ease 0.3s;
 }
 
+.skillBox{
+    border: 4px dashed #fff;
+    width: 100%;
+    transition: ease 0.2s;
+    font-size: 1.5rem;
+}
+
+.skillBox:hover{
+    background-color: #fff;
+    color: #081B33 !important;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.skillBox:hover .svg{
+    fill: #081B33;
+}
+
+.toolsIcon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 0.5rem;
+     
+}
+
+
+.toolsIcon:hover .toolsText,.pen:hover .penText{
+    transform: scale(1);
+}
+
+.next{
+    transition: all 0.2s;
+
+}
+.toolsIcon:hover ~ .next{
+    transition: all 0.2s;
+}
+
+.toolsText, .penText{
+    position: absolute;
+    width:max-content;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    min-width: min-content;
+    bottom: 2.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);;
+    color: #fff;
+    background-color: rgb(32 34 37);
+    font-size: 12px;
+    font-weight: bold;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 100ms;
+    transform: scale(0);
+    transform-origin: left;
+}
 /*feedback*/
 
 .feedback{
@@ -301,28 +366,54 @@ section:nth-of-type(even) {
 }
 
 .feedback{
-    background-color: #081B33;
-	border-radius: 10px;
-
-    transition: ease 0.5s;
-    padding: 10px;
+    
+	box-shadow: inset 10px 10px 10px rgb(0, 0, 0,0.2),
+        -10px 10px 10px rgb(0,0,0,0.2);
 }
 
-.feedback:hover{
-	box-shadow:
-     inset 10px 10px 10px rgb(13, 37, 66,0.2),
-		 -10px 10px 10px rgb(0,0,0,0.2),
-         10px 10px 10px rgb(13, 37, 66,0.2),
-		 -10px 10px 10px rgb(0,0,0,0.2);
-    transition: ease 0.5s;
+.feedbackImg{
+    transform: scaleX(-1);
 }
 
+.buttonFeedback p,.bigTitlePen{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.btnFeedback{
+    width: 80%;
+    padding: 20px 0 !important;    
+    text-align: center;
+    color: #fff !important;
+    background-color: #1dbf73 !important;
+    box-shadow: -6px 5px #0a683c,2px 5px #0f9657;
+    
+    font-size: 15px !important;
+    font-weight: bold !important;
+    transition: ease-in-out 0.2s;
+    
+}
+
+.btnFeedback:hover{
+    box-shadow:none;
+    transition: ease-in-out 0.2s;
+}
 
 /* project section */
 
+figure{
+    transform: rotate(5deg);
+}
+.nextF {
+    transform: rotate(-5deg);
 
+}
 
-
+figure:hover{
+    transform: rotate(0);
+}
 
 figcaption p{
     font-style: normal;
@@ -378,6 +469,50 @@ figcaption a span{
     font-weight: 900;
 }
 
+
+
+
+.pen{
+    width: 150px;
+    height: 150px;
+    border-radius: 35px;
+    background-color: #0f9657;   
+    transition: all 0.5s;
+    border:2px solid #fff;
+	box-shadow: inset 10px 10px 10px rgb(0, 0, 0,0.2),
+    -10px 10px 10px rgb(0,0,0,0.2); 
+    overflow: hidden;
+}
+
+
+
+
+.penPhoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: ease 0.5s;
+    z-index: -999;
+}
+
+.pen:hover .penPhoto{
+    transform: scale(1.05);
+    transition: ease 0.5s;
+
+}
+
+
+.penText{
+    background: rgb(0,0,0,0.5);
+    z-index: 999;
+    display:inline-block;
+    top: 2.5rem;
+   transform-origin: bottom;
+   width: max-content;
+   height: max-content;
+
+    
+}
 
 /* Contact */
 
@@ -503,6 +638,27 @@ padding-top: 10px;
 
     bottom: -10px;
     left: -70px;
-
 }
+    .toolsText{
+         bottom: 0;
+         left: 2.5rem;
+
+    }
+    .penText{
+        bottom: 2.5rem;
+        left: 0;
+    }
+    .toolsIcon:hover ~ .next{
+        transform: translateX(calc(50% + 50px));
+        
+    }
+    .skillBox{
+        width: 70%;
+        padding: 20px;
+    }
+
+    .skills{
+        padding: 50px;
+        margin: 100px 0;
+    }
 }
