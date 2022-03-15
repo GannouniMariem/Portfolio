@@ -334,7 +334,8 @@ section:nth-of-type(even) {
 
 
 .feedbackTitle p,
-.projectTitle p{
+.projectTitle p,
+.bigTitlePen p{
     font-size: 30px;
     display: inline-block;
     padding: 10px;
@@ -342,6 +343,7 @@ section:nth-of-type(even) {
     background-color: #081B33;
 
 }
+.bigTitlePen p,
 .feedbackTitle p{
     padding-left: 70px;
 
@@ -353,7 +355,7 @@ section:nth-of-type(even) {
 }
 
 .feedbackTitle p span,
-.projectTitle p span{
+.projectTitle p span,.bigTitlePen p span{
     color: #FFFFFF;
     
     font-family: 'Roboto', sans-serif;
@@ -375,7 +377,7 @@ section:nth-of-type(even) {
     transform: scaleX(-1);
 }
 
-.buttonFeedback p,.bigTitlePen{
+.buttonFeedback p{
     font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
@@ -475,13 +477,13 @@ figcaption a span{
 .pen{
     width: 150px;
     height: 150px;
-    border-radius: 35px;
-    background-color: #0f9657;   
+    border-radius: 35px; 
     transition: all 0.5s;
-    border:2px solid #fff;
+    border:2px solid #081B33;
 	box-shadow: inset 10px 10px 10px rgb(0, 0, 0,0.2),
     -10px 10px 10px rgb(0,0,0,0.2); 
     overflow: hidden;
+    
 }
 
 
@@ -498,22 +500,31 @@ figcaption a span{
 .pen:hover .penPhoto{
     transform: scale(1.05);
     transition: ease 0.5s;
+    cursor: pointer;
+    filter:brightness(0.7);
 
 }
 
 
 .penText{
-    background: rgb(0,0,0,0.5);
+    background: #081B33;
     z-index: 999;
     display:inline-block;
-    top: 2.5rem;
-   transform-origin: bottom;
-   width: max-content;
-   height: max-content;
+    top:-.5rem;
+    transform-origin: bottom;
+    width: max-content;
+    height: max-content;
 
     
 }
 
+.bigTitlePen .desc{
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 10;
+}
 /* Contact */
 
 .contactBigTitle{
@@ -645,8 +656,7 @@ padding-top: 10px;
 
     }
     .penText{
-        bottom: 2.5rem;
-        left: 0;
+        left: 2.5rem;
     }
     .toolsIcon:hover ~ .next{
         transform: translateX(calc(50% + 50px));
