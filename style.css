@@ -405,17 +405,7 @@ section:nth-of-type(even) {
 
 /* project section */
 
-figure{
-    transform: rotate(5deg);
-}
-.nextF {
-    transform: rotate(-5deg);
 
-}
-
-figure:hover{
-    transform: rotate(0);
-}
 
 figcaption p{
     font-style: normal;
@@ -473,6 +463,19 @@ figcaption a span{
 
 
 
+.more{
+    width: 30%;
+    text-align: center;
+    background-color: #081B33 !important;
+    color: #fff !important;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.more:hover{
+    background-color: #0077b5 !important;
+}
 
 .pen{
     width: 150px;
